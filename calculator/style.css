@@ -90,3 +90,7 @@ input
     text-align: end;
     font-size: 30px;
 }
+.grid-container div
+{
+    min-width: 50%;
+}
