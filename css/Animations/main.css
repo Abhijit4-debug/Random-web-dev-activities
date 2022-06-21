@@ -1,0 +1,46 @@
+.square
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position:relative;
+    animation-name: sq;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+@keyframes sq
+{
+    0%
+    {
+        background-color: blue;
+        left: 0px;
+        top:0px;
+    }
+    25%
+    {
+        background-color: blueviolet;
+        left: 500px;
+        top: 0px;
+    }
+    50%
+    {
+        background-color: coral;
+        left: 500px;
+        top: 500px;
+        border-radius: 50%;
+    }
+    75%
+    {
+        background-color:darkkhaki;
+        left: 0px;
+        top: 500px;
+    }
+    100%
+    {
+        background-color:hotpink;
+        left: 0px;
+        top: 0px;
+    }
+}

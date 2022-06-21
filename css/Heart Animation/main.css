@@ -1,0 +1,55 @@
+.center
+{
+    height:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 2s beat infinite;
+    animation-timing-function: linear;
+}
+.heart {
+    position: relative;
+    background-color: red;
+    display: inline-block;
+    height: 50px;
+    top:0;
+    left:0;
+    transform: rotate(-45deg);
+    width:50px;
+  }
+    
+  .heart:before, .heart:after {
+    content:"";
+    background-color:red;
+    border-radius:50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    width: 50px;
+    }
+    
+  .heart:before {
+    top:-30px;
+    left:0px;}
+    
+  .heart:after {
+    left:30px;
+    top:0;}
+
+    @keyframes beat {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.1);
+        }
+        40% {
+          transform: scale(1);
+        }
+        60% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
